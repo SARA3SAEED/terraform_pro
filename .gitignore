@@ -3,3 +3,4 @@ http2.pem
 terraform.tfstate
 terraform.tfstate.backup
 variables.tf
+terraform.lock.hcl
