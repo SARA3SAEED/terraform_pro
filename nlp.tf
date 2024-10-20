@@ -1,3 +1,5 @@
+# --------------------load_balancer----------------------------#
+
 resource "alicloud_nlb_load_balancer" "default" {
   load_balancer_name = "load-balancer"
   load_balancer_type = "Network"
@@ -49,7 +51,7 @@ resource "alicloud_nlb_server_group" "default" {
 }
 
 
-# ------------------------ attatch ---------------------------------#
+# ------------------------ attach ---------------------------------#
 
 resource "alicloud_nlb_server_group_server_attachment" "default" {
   count = length(alicloud_instance.http)
